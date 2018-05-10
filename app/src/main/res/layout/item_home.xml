@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_home_bg"
+    android:layout_margin="@dimen/padding3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding17">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_weather"
+            android:layout_width="@dimen/padding56"
+            android:layout_height="@dimen/padding56"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding5"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/grey"/>
+
+        <TextView
+            android:id="@+id/txt_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16.5"
+            android:layout_marginTop="@dimen/padding5"
+            android:text="Cairo"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/font_12"
+            android:text="Tue, May"/>
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding8"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txt_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16.5"
+            android:layout_marginTop="@dimen/padding8"
+            android:text="25"/>
+
+
+        <TextView
+            android:id="@+id/txt_temp_min_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_66"
+            android:textSize="@dimen/font_12"
+            android:text="25/14"
+            android:layout_marginTop="@dimen/padding13"/>
+    </LinearLayout>
+
+</RelativeLayout>

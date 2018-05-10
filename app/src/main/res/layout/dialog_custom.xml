@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_bg"
+    android:layout_marginTop="@dimen/padding32"
+    android:layout_marginBottom="@dimen/padding32"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_15.5"
+        android:textColor="@color/black"
+        android:text="Selected Location"
+        style="@style/TextViewMedium" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_13"
+        android:textColor="@color/grey"
+        android:text="LatLon"
+        style="@style/TextViewRegular"
+        android:layout_marginTop="@dimen/padding19"
+        android:paddingRight="@dimen/padding24"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/padding19"
+        >
+
+        <Button
+            android:id="@+id/btn_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Add"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>
